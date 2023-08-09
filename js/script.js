@@ -19,3 +19,7 @@ function showData(dataArray) {
 }
 
 // Escribe el código necesario para realizar el fetch al archivo con los datos y mostrar los estudiantes con la función showData
+
+//document.addEventListener("DOMContentLoaded", ()=>{
+    fetch(DATA_URL).then(res=>res.json()).then(obj => showData(obj))
+//});
